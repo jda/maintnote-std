@@ -68,18 +68,11 @@ Example:
 
 The following Calendar Properties are in scope for Maintenance Notifications:
 
-Property
-Presence Required
-Comment
-VERSION
-1
-Required per [RFC5545]
-PRODID
-1
-Required per [RFC5545]
-METHOD
-0 or 1
-See below
+| Property | Presence Required | Comment |
+| -------- | ----------------- | ------- |
+| VERSION | 1 | Required per [RFC5545] |
+| PRODID | 1 | Required per [RFC5545] |
+| METHOD | 0 or 1 | See below |
 
 ### 3.4.1 METHOD Calendar Property
 
@@ -91,48 +84,21 @@ When an iCalendar Object represents a scheduling transaction, Human facing Calen
 
 Maintenance Notification information MUST be represented using the iCalendar Event Component as described in [RFC5545] section 3.6.1. All of the following Properties MUST be included with any iCalendar Event for it to be a properly formatted maintenance notification. These properties are the minimum set required to automate common processing and dispatching of maintenance notifications. Implementors MAY include and/or parse other iCal Properties, however the presence of other iCal Properties MUST NOT conflict with the use of mandatory Properties listed below.
 
-Property
-Presence Required
-Comment
-DTSTAMP
-1
-
-DTSTART
-1
-
-DTEND
-1
-
-UID
-1
-
-SUMMARY
-1
-
-ORGANIZER
-1
-
-SEQUENCE
-1
-
-X-MAINTNOTE-PROVIDER
-1
-See below
-X-MAINTNOTE-ACCOUNT
-1
-See below
-X-MAINTNOTE-MAINTENANCE-ID
-1+
-See below
-X-MAINTNOTE-OBJECT-ID
-1+
-See below
-X-MAINTNOTE-IMPACT
-1
-See below
-X-MAINTNOTE-STATUS
-0 or 1
-See below
+| Property | Presence Required | Comment |
+| -------- | ----------------- | ------- |
+| DTSTAMP | 1 | |
+|DTSTART | 1 | |
+| DTEND | 1 | |
+| UID | 1 | |
+| SUMMARY | 1 | |
+| ORGANIZER | 1 | | 
+| SEQUENCE | 1 | |
+| X-MAINTNOTE-PROVIDER | 1 | See below |
+| X-MAINTNOTE-ACCOUNT |1 | See below |
+| X-MAINTNOTE-MAINTENANCE-ID | 1+ | See below |
+| X-MAINTNOTE-OBJECT-ID | 1+ |See below |
+| X-MAINTNOTE-IMPACT | 1 | See below |
+| X-MAINTNOTE-STATUS | 0 or 1 | See below |
 
 ## 3.6 Descriptive Component Properties
 
